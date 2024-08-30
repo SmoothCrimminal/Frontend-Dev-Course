@@ -1,0 +1,131 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+
+        .picture {
+            position: relative;
+            width: 80vh;
+            height: 45vh;
+            background-color: lightskyblue;
+            overflow: hidden;
+        }
+
+        .rocks {
+            z-index: 1;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        #mountain {
+            width: 100%;
+            top: 10%;
+            z-index: 1;
+        }
+
+        #rock1 {
+            width: 100%;
+            top: 30%;
+        }
+
+        #rock2 {
+            width: 100%;
+            top: 40%;
+        }
+
+        #rock3 {
+            width: 100%;
+            top: 40%
+        }
+
+        #rock4 {
+            width: 100%;
+            top: 50%
+        }
+
+        #rock5 {
+            width: 100%;
+            top: 72%;
+        }
+
+        #moon {
+            width: 10%;
+            left: 10%;
+            top: 10%;
+        }
+
+        #cloud1 {
+            width: 40%;
+            top: 10%;
+            left: -10%;
+        }
+
+        #cloud2 {
+            width: 50%;
+            top: 10%;
+            right: -5%;
+        }
+
+        #branch {
+            z-index: 1;
+            width: 40%;
+            right: 0;
+            bottom: 30%;
+        }
+
+        #logo {
+            z-index: 1;
+            height: 30%;
+            left: 5%;
+            bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+        <img src="img/japan1.png" alt="" id="mountain" class="rocks">
+        <img src="img/japan2.png" alt="" id="rock1" class="rocks">
+        <img src="img/japan3.png" alt="" id="rock2" class="rocks">
+        <img src="img/japan4.png" alt="" id="rock3" class="rocks">
+        <img src="img/japan5.png" alt="" id="rock4" class="rocks">
+        <img src="img/japan6.png" alt="" id="rock5" class="rocks">
+        <img src="img/japan7.png" alt="" id="moon">
+        <img src="img/japan8.png" alt="" id="cloud1">
+        <img src="img/japan9.png" alt="" id="cloud2">
+        <img src="img/japan10.png" alt="" id="branch">
+        <img src="img/japan11.png" alt="" id="logo">
+
+    </div>
+</body>
+
+</html>

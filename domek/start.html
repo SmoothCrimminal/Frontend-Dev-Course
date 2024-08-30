@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        span {
+            display: block;
+            width: 100px;
+            height: 50px;
+            background-color: crimson;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            font-size: 12px;
+            margin: 40px;
+            cursor: pointer;
+        }
+
+        div:nth-of-type(1) {
+            position: absolute;
+            transform: translate(-600px, 1000px);
+            width: 500px;
+            height: 250px;
+            background-color: crimson;
+            transition: .5s;
+        }
+
+        div:nth-of-type(2) {
+            position: absolute;
+            transform: translate(-600px, 1000px);
+            width: 50px;
+            height: 100px;
+            background-color: #ddd;
+            transition: .7s;
+        }
+
+        div:nth-of-type(3) {
+            position: absolute;
+            transform: translate(-600px, 1000px);
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: .8s;
+        }
+
+        div:nth-of-type(4) {
+            position: absolute;
+            transform: translate(-600px, 1000px);
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: .8s;
+        }
+
+        div:nth-of-type(5) {
+            position: absolute;
+            transform: translate(-600px, 1000px);
+            width: 50px;
+            height: 100px;
+            background-color: darkgray;
+            transition: 1s;
+        }
+
+        div:nth-of-type(6) {
+            position: absolute;
+            transform: translate(-600px, 1000px);
+            width: 0;
+            height: 0;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+
+            border-bottom: 200px solid black;
+            transition: 1.2s;
+        }
+
+        span:hover ~ div:nth-of-type(1) {
+            transform: translate(500px, 400px);
+        }
+
+        span:hover ~ div:nth-of-type(2) {
+            transform: translate(calc(750px - 25px), 550px);
+        }
+
+        span:hover ~ div:nth-of-type(3) {
+            transform: translate(550px, 450px);
+        }
+
+        span:hover ~ div:nth-of-type(4) {
+            transform: translate(850px, 450px);
+        }
+
+        span:hover ~ div:nth-of-type(5) {
+            transform: translate(800px, 200px);
+        }
+
+        span:hover ~ div:nth-of-type(6) {
+            transform: translate(500px, 200px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

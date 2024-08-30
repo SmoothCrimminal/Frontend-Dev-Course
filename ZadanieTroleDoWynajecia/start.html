@@ -1,0 +1,97 @@
+<!-- Ustaw trzy kolumny za pomocą flex - max dla sekcji obejmującej 3 kolumny to 1200px -->
+<!-- Każda kolumna też ma byc kontenerem flex. Kolumny powinny mieć 25% szerokości rodzica, między kolumnami powinny być odstępy-->
+<!-- Cena zawsze na dole i obramowana -->
+<!-- link: https://websamuraj.pl/examples/fez/cennik.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Cennik - wieczory panieńskie</title>
+ <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        height: 5vh;
+        align-self: center;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 80vh;
+    }
+
+    .col {
+        background-color: #ddd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 30%;
+        gap: 30px;
+    }
+
+    .col .price {
+        background-color: white;
+        width: 80%;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        border: 1px solid black;
+        cursor: pointer;
+        flex-basis: 10%;
+    }
+
+    .col h2 {
+        flex-basis: 10%;
+    }
+
+    .col p {
+        flex-basis: 50%;
+    }
+
+    .col img {
+        flex-basis: 30%;
+        width: 200px;
+    }
+ </style>
+</head>
+
+<body>
+
+ <h1>Wieczór panieński - zaproś naszego trola!</h1>
+ <section>
+  <div class="col">
+   <h2>Opcja 1</h2>
+   <img src="1.png" alt="">
+   <p>(bardzo) Tanio</p>
+   <p class="price"><span>100 dutków</span></p>
+  </div>
+
+  <div class="col">
+   <h2>Opcja 2</h2>
+   <img src="2.png" alt="">
+   <p>Średnio Tanio</p>
+   <p>Wielka pałka w zestawie</p>
+   <p class="price"><span>300 dutków</span></p>
+  </div>
+
+  <div class="col">
+   <h2>Opcja 3</h2>
+   <img src="3.png" alt="">
+   <p>Niezbyt tanio</p>
+   <p>Duża moc (wytrzyma noc)</p>
+   <p>Przystojny (jak na trola)</p>
+   <p class="price"><span>500 dutków</span></p>
+  </div>
+
+ </section>
+</body>
+
+</html>
